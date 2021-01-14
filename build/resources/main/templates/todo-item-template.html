@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>TodoList</title>
+</head>
+<body>
+<div>
+    <header>
+        <h1>We Can Code IT Todo List</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/notHome.html">Not Home</a>
+        </nav>
+    </header>
+    <main>
+        <h2 th:text="${TodoItem.owner.name} + '\'s TodoList'">Jordan's Todo list</h2>
+        <h3 th:text="${TodoItem.title}">Grade Work</h3>
+        <h4 th:text="${TodoItem.urgency}">Urgent</h4>
+        <p th:text="${TodoItem.requester}">WCCI</p>
+        <p th:text="${TodoItem.description}">Grade work and give feedback to Cohort</p>
+
+        <section class="hashtags">
+            <p class="hashtags__header">Hashtags:</p>
+            <ul class="hashtags-list">
+                <li th:each="hashtag: ${todoItem.hashtags}" th:text="${hashtag.name}" class="hashtags-hashtag">#Wonderdog</li>
+            </ul>
+
+        </section>
+    </main>
+</div>
+</body>
+</html>

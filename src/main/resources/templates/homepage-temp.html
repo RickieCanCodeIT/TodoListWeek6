@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>TodoList</title>
+</head>
+<body>
+<div>
+    <header>
+        <h1>We Can Code IT Todo List</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/notHome.html">Not Home</a>
+        </nav>
+    </header>
+    <main>
+        <ul>
+            <li th:each="owner:${owners}"><a th:text="${owner.name}" th:href="'owner/' + ${owner.id}">Jordan</a></li>
+        </ul>
+        <form action="owner" method="POST">
+            <p>Name of new owner</p>
+            <input type="text" name="newOwner" />
+            <button type="submit">Add Owner</button>
+        </form>
+    </main>
+</div>
+</body>
+</html>

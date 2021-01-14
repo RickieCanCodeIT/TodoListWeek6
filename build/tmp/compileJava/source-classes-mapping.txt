@@ -1,0 +1,24 @@
+com/example/demo/storage/TodoItemStorage.java
+ com.example.demo.storage.TodoItemStorage
+com/example/demo/TodoOwnerRepository.java
+ com.example.demo.TodoOwnerRepository
+com/example/demo/TodoItemRepository.java
+ com.example.demo.TodoItemRepository
+com/example/demo/controllers/TodoItemController.java
+ com.example.demo.controllers.TodoItemController
+com/example/demo/storage/OwnerStorage.java
+ com.example.demo.storage.OwnerStorage
+com/example/demo/OwnerPopulator.java
+ com.example.demo.OwnerPopulator
+com/example/demo/models/TodoOwner.java
+ com.example.demo.models.TodoOwner
+com/example/demo/models/TodoItem.java
+ com.example.demo.models.TodoItem
+com/example/demo/HashtagRepository.java
+ com.example.demo.HashtagRepository
+com/example/demo/TodoforWcciApplication.java
+ com.example.demo.TodoforWcciApplication
+com/example/demo/Hashtag.java
+ com.example.demo.Hashtag
+com/example/demo/controllers/OwnerController.java
+ com.example.demo.controllers.OwnerController

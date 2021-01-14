@@ -1,0 +1,4 @@
+com/example/demo/TodoforWcciApplicationTests.java
+ com.example.demo.TodoforWcciApplicationTests
+com/example/demo/JpaWiringTest.java
+ com.example.demo.JpaWiringTest
